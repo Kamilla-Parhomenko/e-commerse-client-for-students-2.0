@@ -8,5 +8,72 @@
 </head>
 <body>
     
+  <include id="header" src="../../components/header/header-component.html"></include>
+
+    <div class="content h-screen w-full p-20">
+        <div class="flex w-full justify-around p-10">
+            <div class="w-1/3 space-y-2">
+                <p>First name</p>
+                <input type="text" class="border border-gray-200 p-1 rounded-md w-full">
+                <p>Last name</p>
+                <input type="text" class="border border-gray-200 p-1 rounded-md w-full">
+                <p>State</p>
+                <select name="" id="" class="border border-gray-200 p-1 rounded-md w-full">
+                    <option value="">Choose...</option>
+                </select>
+                <p>City</p>
+                <input type="text" class="border border-gray-200 p-1 rounded-md w-full">
+                <p>Address</p>
+                <input type="text" class="border border-gray-200 p-1 rounded-md w-full">
+                <p>Zip</p>
+                <input type="text" class="border border-gray-200 p-1 rounded-md w-[150px]">
+                <p>Tel</p>
+                <input type="tel" class="border border-gray-200 p-1 rounded-md w-full">
+                <p>Email</p>
+                <input type="email" class="border border-gray-200 p-1 rounded-md w-full">
+                <input type="checkbox">
+                <label>Agree to TAC</label>
+            </div>
+            <div class="space-y-3">
+                <p>Card number</p>
+                <input type="password" class="border border-gray-200 p-1 rounded-md w-full">
+                <div class="flex justify-between">
+                    <div>
+                        <p>Expiration(MM)</p>
+                        <input type="text" class="border border-gray-200 p-1 rounded-md w-full">
+                    </div>
+                    <div>
+                        <p>Expiration(YY)</p>
+                        <input type="text" class="border border-gray-200 p-1 rounded-md w-full">
+                    </div>
+                    <div>
+                        <p>Card security code</p>
+                        <input type="password" class="border border-gray-200 p-1 rounded-md w-full">
+                    </div>
+                </div>
+                <table class="w-full text-2xl">
+                        <tr class="border-b border-gray-200">
+                            <td>Subtotal</td>
+                            <td class="text-right p-3">189.9699999999999997$</td>
+                        </tr>
+                        <tr class="border-b border-gray-200">
+                            <td>Shipping</td>
+                            <td class="text-right p-3">free</td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td class="text-right p-3">189.9699999999999997$</td>
+                        </tr>
+                    </table>
+                    <button type="button" class="p-2 bg-red-600 text-white rounded-md ml-[400px] hover:bg-red-400 cursor-pointer">Place order</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <include id="footer" src="../../components/footer/footer-component.html"></include>
+
+
+    <script type="module" src="../../utils/include.js"></script>
 </body>
 </html>

@@ -8,5 +8,28 @@
 </head>
 <body>
     
+  <include id="header" src="../../components/header/header-component.html"></include>
+
+
+  <div class="content h-screen flex items-center justify-center">
+
+    <div class="h-full w-full p-20">
+      <button type="button" class="bg-red-600 text-white p-2 rounded-md">My products for sale</button>
+
+      <div class="space-y-2 p-4">
+        <h2 class="text-red-600 font-bold text-2xl">User Details</h2>
+
+        <p class="text-2xl"><span class="font-bold">Name: </span>Iman</p>
+        <p class="text-2xl"><span class="font-bold">Surname: </span>Iman</p>
+        <p class="text-2xl"><span class="font-bold">Email: </span>Iman@gmail.com</p>
+        <p class="text-2xl"><span class="font-bold">Username: </span>Iman</p>
+      </div>
+    </div>
+  </div>
+
+
+  <include id="footer" src="../../components/footer/footer-component.html"></include>
+
+  <script type="module" src="../../utils/include.js"></script>
 </body>
 </html>
