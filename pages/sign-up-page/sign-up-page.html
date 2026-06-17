@@ -8,5 +8,28 @@
 </head>
 <body>
     
+  <include id="header" src="../../components/header/header-component.html"></include>
+
+    <div class="content h-screen flex items-center justify-center">
+        <form class="w-[400px] p-3 space-y-3">
+            <h2 class="font-medium text-4xl text-center">Create an Account</h2>
+            <p>Name</p>
+            <input type="text" class="w-full border border-gray-300 rounded-md px-1 py-2 outline-none">
+            <p>Surname</p>
+            <input type="text" class="w-full border border-gray-300 rounded-md px-1 py-2 outline-none">
+            <p>Email</p>
+            <input type="email" class="w-full border border-gray-300 rounded-md px-1 py-2 outline-none">
+            <p>Username</p>
+            <input type="text" class="w-full border border-gray-300 rounded-md px-1 py-2 outline-none">
+            <p>Password</p>
+            <input type="password" class="w-full border border-gray-300 rounded-md px-1 py-2 outline-none">
+            <button type="submit" class="w-full py-3 bg-red-600 rounded-md text-white hover:bg-red-400 cursor-pointer">Create Account</button>
+            <p class="text-center text-xs">Already have an account ? <a href="../sign-in-page/sign-in-page.html" class="text-red-600">Log in</a></p>
+        </form>
+    </div>
+
+
+    <include id="footer" src="../../components/footer/footer-component.html"></include>
+    <script type="module" src="../../utils/include.js"></script>
 </body>
 </html>

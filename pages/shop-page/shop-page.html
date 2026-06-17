@@ -8,5 +8,80 @@
 </head>
 <body>
     
+  <include id="header" src="../../components/header/header-component.html"></include>
+
+    <div class="content p-8 h-screen flex justify-center">
+        <div class="w-full border p-4 flex">
+            <div class="w-[250px] h-full p-2 space-y-2">
+                <h2 class="text-4xl font-bold">Shop</h2>
+                <input type="text" class="p-2 border border-gray-200 rounded-md outline-none" placeholder="search">
+                <h2 class="text-xl font-medium">Category</h2>
+                <ul class="ml-2 mb-3">
+                    <li><button class="text-left cursor-pointer px-3 py-2 w-full">Clothing</button></li>
+                    <li><button class="text-left cursor-pointer px-3 py-2 w-full">Footwear</button></li>
+                    <li><button class="text-left cursor-pointer px-3 py-2 w-full">Accessories</button></li>
+                    <li><button class="text-left cursor-pointer px-3 py-2 w-full">Tablets</button></li>
+                </ul>
+                <hr class="text-gray-200">
+                <h3 class="text-2xl font-bold">Rate</h3>
+                <ul class="ml-2 mb-3">
+                    <li><button class="text-left cursor-pointer px-3 py-2 w-full">⭐⭐⭐⭐⭐</button></li>
+                    <li><button class="text-left cursor-pointer px-3 py-2 w-full">⭐⭐⭐⭐</button></li>
+                    <li><button class="text-left cursor-pointer px-3 py-2 w-full">⭐⭐⭐</button></li>
+                    <li><button class="text-left cursor-pointer px-3 py-2 w-full">⭐⭐</button></li>
+                    <li><button class="text-left cursor-pointer px-3 py-2 w-full">⭐</button></li>
+                </ul>
+                <hr class="text-gray-200">
+            </div>
+            <div class="min-w-[50%] h-full flex-1 p-4">
+                <div class="w-full space-y-4">
+                    <button class="p-2 bg-red-600 text-white rounded-md hover:bg-red-400">All products</button> <br>
+                    <select name="" id="" class="p-2 border border-gray-200 w-[200px] rounded-md outline-none">
+                        <option value="">Sort by</option>
+                        <option value="">Price</option>
+                        <option value="">Name</option>
+                        <option value="">Rating</option>
+                        <option value="">Popularity</option>
+                    </select>
+                    <div class="w-full p-4 flex justify-between">
+                        <div class="w-1/6 h-full p-2 space-y-2">
+                            <img src="../../public/images/Снимок экрана 2026-06-17 171832.png" alt="">
+                            <h5 class="font-medium">Hanes Hanes Cotton T-Shirt</h5>
+                            <p class="text-red-500">19.99$</p>
+                            <p class="text-gray-400">⭐⭐⭐⭐⭐(62)</p>
+                            <button type="button" class="bg-black text-white text-center w-full p-1 rounded-md hover:bg-gray-600 cursor-pointer">Add to Cart</button>
+                        </div>
+                        <div class="w-1/6 h-full p-2 space-y-2">
+                            <img src="../../public/images/Снимок экрана 2026-06-17 171847.png" alt="">
+                            <h5 class="font-medium">Nike Nike Runningg Shoes</h5>
+                            <p class="text-red-500">89.99$</p>
+                            <p class="text-gray-400">⭐⭐⭐⭐⭐(65)</p>
+                            <button class="bg-black text-white text-center w-full p-1 rounded-md hover:bg-gray-600 cursor-pointer">Add to Cart</button>
+                        </div>
+                        <div class="w-1/6 h-full p-2 space-y-2">
+                            <img src="../../public/images/Снимок экрана 2026-06-17 171858.png" alt="">
+                            <h5 class="font-medium">Samsonite Samsonite Backpack</h5>
+                            <p class="text-red-500">79.99$</p>
+                            <p class="text-gray-400">⭐⭐⭐⭐⭐(42)</p>
+                            <button class="bg-black text-white text-center w-full p-1 rounded-md hover:bg-gray-600 cursor-pointer">Add to Cart</button>
+                        </div>
+                        <div class="w-1/6 h-full p-2 space-y-2">
+                            <img src="../../public/images/Снимок экрана 2026-06-17 171909.png" alt="">
+                            <h5 class="font-medium">Apple Apple iPad Pro</h5>
+                            <p class="text-red-500">899.99$</p>
+                            <p class="text-gray-400">⭐⭐⭐⭐⭐(47)</p>
+                            <button class="bg-black text-white text-center w-full p-1 rounded-md hover:bg-gray-600 cursor-pointer">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <include id="footer" src="../../components/footer/footer-component.html"></include>
+    
+    
+    <script type="module" src="../../utils/include.js"></script>
 </body>
 </html>
